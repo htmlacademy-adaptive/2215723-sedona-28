@@ -2,8 +2,8 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <meta charset="UTF-8">
+  <title>Красивые места Седоны</title>
 </head>
 
 <body class="page-body">
@@ -19,10 +19,10 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a class="site-list__item-link" href="#">Главная</a>
+            <a class="site-list__item-link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="catalog.html">Фото и видео</a>
+            <a class="site-list__item-link" href="#">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__item-link" href="form.html">Форма отзыва</a>
@@ -35,73 +35,70 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="hero">
-      <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-      <img width="282" height="214" src="img/mobile/index/welcome-text-mobile.svg"
-        alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+    <section class="hero-catalog">
+      <h1 class="visually-hidden">Виды Седоны</h1>
+      <img width="229" height="39" src="img/mobile/catalog/catalog-sedona-mobile.svg" alt="Sedona.">
     </section>
-    <section class="advantages">
-      <div class="advantages-wrapper">
-        <div class="advantages__annotation">
-          <h2 class="advantages__annotation-subtitle subtitle">Седона — небольшой городок в Аризоне, заслуживающий
-            большего!</h2>
-          <p class="advantages__annotation-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд
-            каньон!</p>
-        </div>
-        <ol class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__subtitle subtitle">Настоящий городок</h3>
-            <p class="advantages__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages__image" width="320" height="260"
-              src="img/mobile/index/advantages-real-city-mobile.jpg" alt="Дома Седоны.">
-            <ul class="advantages__service service">
-              <li class="service__item">
-                <h4 class="service__subtitle subtitle">Жильё</h4>
-                <p class="service__description">Рекомендуем пожить в настоящем мотеле, всё как в
-                  кино!</p>
-              </li>
-              <li class="service__item">
-                <h4 class="service__subtitle subtitle">Еда</h4>
-                <p class="service__description">Всегда заказывайте фирменный бургер, вы не
-                  разочаруетесь!
-                </p>
-              </li>
-              <li class="service__item">
-                <h4 class="service__subtitle subtitle">Сувениры</h4>
-                <p class="service__description">Не только китайского, но и местного
-                  производства!</p>
-              </li>
-            </ul>
+    <section class="media">
+      <div class="media__wrapper">
+        <h2 class="media__subtitle subtitle">Фото и видео</h2>
+        <p class="media__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
+        <ul class="media__list photo-list">
+          <li class="photo-list__item">
+            <img class="photo-list__image" width="280" height="280" src="img/mobile/catalog/catalog-1-mobile.jpg"
+              alt="Дорога в пустыне на закате.">
+            <p class="photo-list__name">Неродные просторы</p>
+            <p class="photo-list__author">Автор фото: Борис</p>
+            <a class="photo-list__favorite-link" href="#">
+              <span class="visually-hidden">Понравилось фото</span>
+              <span class="photo-list__favorite-value">1350</span>
+            </a>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__subtitle subtitle">Там есть мост дьявола</h3>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantages__image" width="320" height="260" src="img/mobile/index/advantages-bridge-mobile.jpg"
-              alt="Скалы Седоны.">
+          <li class="photo-list__item">
+            <img class="photo-list__image" width="280" height="280" src="img/mobile/catalog/catalog-2-mobile.jpg"
+              alt="Кактусы в Аризоне.">
+            <p class="photo-list__name">Местная растительность.</p>
+            <p class="photo-list__author">Автор фото: Сергей</p>
+            <a class="photo-list__favorite-link" href="#">
+              <span class="visually-hidden">Понравилось фото</span>
+              <span class="photo-list__favorite-value">143</span>
+            </a>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__subtitle subtitle">Небольшая площадь</h3>
-            <p class="advantages__description">Все интересные места находятся очень близко</p>
+          <li class="photo-list__item">
+            <img class="photo-list__image" width="280" height="280" src="img/mobile/catalog/catalog-3-mobile.jpg"
+              alt="Дороги Седоны.">
+            <p class="photo-list__name">Дорога на Север</p>
+            <p class="photo-list__author">Автор фото: Петр</p>
+            <a class="photo-list__favorite-link" href="#">
+              <span class="visually-hidden">Понравилось фото</span>
+              <span class="photo-list__favorite-value">96</span>
+            </a>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__subtitle subtitle">Красивая дорога</h3>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          <li class="photo-list__item">
+            <img class="photo-list__image" width="280" height="280" src="img/mobile/catalog/catalog-4-desktop.jpg"
+              alt="Рыжие скалы.">
+            <p class="photo-list__name">Мост Дьявола</p>
+            <p class="photo-list__author">Автор фото: Антон</p>
+            <a class="photo-list__favorite-link" href="#">
+              <span class="visually-hidden">Понравилось фото</span>
+              <span class="photo-list__favorite-value">254</span>
+            </a>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__subtitle subtitle">Мало туристов</h3>
-            <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ol>
+        </ul>
       </div>
     </section>
-    <section class="search">
-      <div class="search__wrapper">
-        <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в Седоне</p>
-        <button class="search__button button" type="button">Найти гостиницу</button>
+    <section class="promote">
+      <div class="promote__wrapper">
+        <h2 class="promote__subtitle subtitle">Все еще сомневаетесь?</h2>
+        <p class="promote__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не
+          подорожали в очередной раз!</p>
+        <a class="promote__video" href="#">
+          <img class="promote__image" width="280" height="177" src="img/mobile/catalog/catalog-video.jpg"
+            alt="Горная дорога с машинами в Седоне.">
+          <button class="promote__button" type="button"></button>
+        </a>
       </div>
-      <iframe src="img/mobile/index/map-mobile.jpg" height="350" width="320"></iframe>
     </section>
   </main>
   <footer class="footer">
