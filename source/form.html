@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Форма отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/mobile/header/logo-sedona-mobile.svg" width="185" height="96"
@@ -17,18 +18,18 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__item-link" href="index.html">Главная</a>
+        <ul class="main-nav__list site">
+          <li class="site__item">
+            <a class="site__item-link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="catalog.html">Фото и видео</a>
+          <li class="site__item">
+            <a class="site__item-link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="#">Форма отзыва</a>
+          <li class="site__item">
+            <a class="site__item-link site__item-link--current" href="#">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="https://htmlacademy.ru">Html Academy</a>
+          <li class="site__item">
+            <a class="site__item-link" href="https://htmlacademy.ru">Html Academy</a>
           </li>
         </ul>
       </div>
@@ -49,19 +50,19 @@
         <fieldset class="feedback-form__fieldset">
           <legend class="feedback-form__legend subtitle">Представьтесь:</legend>
           <div class="feedback-form__wrapper">
-            <label class="feedback-form__label label-tourist" for="first-name">
-              <span class="label-tourist__span span">Имя*:</span>
-              <input class="label-tourist__input" type="text" id="first-name" name="first-name" value="Пётр"
-                placeholder="Имя" required>
+            <label class="feedback-form__label label" for="first-name">
+              <span class="label__span">Имя*:</span>
+              <input class="label__input" type="text" id="first-name" name="first-name" value="Пётр" placeholder="Имя"
+                required>
             </label>
-            <label class="feedback-form__label label-tourist" for="last-name">
-              <span class="label-tourist__span span">Фамилия*:</span>
-              <input class="label-tourist__input" type="text" id="last-name" name="last-name" value="Пустота"
+            <label class="feedback-form__label label" for="last-name">
+              <span class="label__span">Фамилия*:</span>
+              <input class="label__input" type="text" id="last-name" name="last-name" value="Пустота"
                 placeholder="Фамилия" required>
             </label>
-            <label class="feedback-form__label label-tourist" for="middle-name">
-              <span class="label-tourist__span span">Отчество:</span>
-              <input class="label-tourist__input" type="text" id="middle-name" name="middle-name" value="Викторович"
+            <label class="feedback-form__label label" for="middle-name">
+              <span class="label__span">Отчество:</span>
+              <input class="label__input" type="text" id="middle-name" name="middle-name" value="Викторович"
                 placeholder="Отчество">
             </label>
           </div>
@@ -69,15 +70,13 @@
         <fieldset class="feedback-form__fieldset">
           <legend class="feedback-form__legend subtitle">Контактная информация:</legend>
           <div class="feedback-form__wrapper">
-            <label class="feedback-form__label label-contacts" for="phone">
-              <span class="label-contacts__span span">Контактный телефон*:</span>
-              <input class="label-contacts__input" type="tel" id="phone" name="phone" placeholder="Введите телефон"
-                required>
+            <label class="feedback-form__label label" for="phone">
+              <span class="label__span">Контактный телефон*:</span>
+              <input class="label__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
             </label>
             <label class="feedback-form__label label-contacts" for="email">
-              <span class="label-contacts__span span">Электронная почта*:</span>
-              <input class="label-contacts__input" type="email" id="email" name="email" placeholder="Введите e-mail"
-                required>
+              <span class="label__span">Электронная почта*:</span>
+              <input class="label__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </label>
           </div>
         </fieldset>
@@ -149,7 +148,7 @@
           </div>
         </fieldset>
         <button class="form__button button" type="submit">Отправить отзыв</button>
-        <span class="form__span span">*-обязательные поля</span>
+        <span class="form__span">*-обязательные поля</span>
       </form>
     </section>
   </main>

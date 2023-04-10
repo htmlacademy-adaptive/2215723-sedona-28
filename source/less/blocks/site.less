@@ -1,0 +1,26 @@
+.site {
+  .list-reset;
+}
+
+.site__item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: @color-title;
+
+  &--current {
+    color: @color-title-active;
+  }
+
+  &:hover {
+    color: @color-bg;
+  }
+
+  &:active {
+    color: @color-title-active;
+  }
+
+  &:disabled {
+    color: @color-bg-disabled;
+  }
+}
