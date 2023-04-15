@@ -6,16 +6,28 @@
   color: @color-base;
   background-color: @color-second;
   font-style: normal;
-}
 
-.page__body {
-  margin: 0 auto;
-  min-height: 100vh;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
+  @media (min-width: @desktop-width) {
+    background-color: @color-bg-input;
 
-  @media (min-width: @mobile-width-only) {
-    width: 768px;
+  }
+
+  .page__body {
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: @color-second;
+
+    @media (min-width: @mobile-width-only) {
+      width: 768px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 1200px;
+      margin: 0 40px;
+      filter: drop-shadow(0 5px 15px rgba(0, 1, 1, 0.2));
+    }
   }
 }
