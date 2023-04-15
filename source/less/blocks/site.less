@@ -12,9 +12,16 @@
 }
 
 .site__item {
+  width: 100%;
   min-height: 56px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 
   @media (min-width: @tablet-width) {
+
+    border: none;
+
     &:nth-of-type(1) {
       grid-column: 1/2;
     }
@@ -30,14 +37,16 @@
     &:nth-of-type(4) {
       grid-column: 5/6;
     }
+
   }
 
 }
 
 .site__item-link {
+  display: block;
+  text-align: center;
   padding: 17px 77px 12px;
   box-sizing: border-box;
-  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -49,6 +58,8 @@
     font-size: 14px;
     line-height: 21px;
     color: @color-title;
+    padding: 17px 22px 18px;
+
   }
 
 
