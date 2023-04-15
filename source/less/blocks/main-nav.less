@@ -9,6 +9,16 @@
   background-color: @color-second;
 }
 
+.main-nav__logo {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 185px;
+  height: 96px;
+  z-index: 2;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 17px;
@@ -50,6 +60,12 @@
 
 .main-nav--opened {
   background-color: @color-bg;
+
+}
+
+
+.main-nav--opened .main-nav__logo {
+  z-index: -1;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -59,7 +75,6 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
     right: 0;
     height: 4px;
     width: 26px;
