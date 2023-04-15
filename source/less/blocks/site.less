@@ -1,6 +1,7 @@
 .site {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -12,9 +13,6 @@
 
 .site__item {
   min-height: 56px;
-  padding: 17px 77px 12px;
-  box-sizing: border-box;
-  text-align: center;
 
   @media (min-width: @tablet-width) {
     &:nth-of-type(1) {
@@ -37,12 +35,15 @@
 }
 
 .site__item-link {
-  text-decoration: none;
-  text-transform: uppercase;
+  padding: 17px 77px 12px;
+  box-sizing: border-box;
+  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: @color-second;
+  text-decoration: none;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
