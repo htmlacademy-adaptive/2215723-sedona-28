@@ -4,6 +4,19 @@
   align-items: center;
   padding: 33px;
   flex-shrink: 0;
+
+  @media (min-width:@tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 113px;
+    padding: 36px 60px;
+  }
+
+  @media (min-width:@desktop-width) {
+    padding: 36px 120px;
+    gap: 270px;
+  }
 }
 
 .footer__hashtag {
@@ -13,8 +26,17 @@
   line-height: 26px;
   color: @color-title;
   text-transform: uppercase;
+
+  @media (min-width:@tablet-width) {
+    margin: 0;
+  }
 }
+
 
 .footer__social {
   margin-bottom: 30px;
+
+  @media (min-width:@tablet-width) {
+    margin: 0;
+  }
 }
