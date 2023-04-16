@@ -1,6 +1,5 @@
 .advantages {
   padding: 32px 18px;
-  width: 320px;
   box-sizing: border-box;
 }
 
@@ -9,6 +8,19 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding: 32px 0 16px;
+
+  @media (min-width:@tablet-width) {
+    padding: 47px 124px 55px;
+  }
+}
+
+.advantages__annotation-subtitle {
+  margin: 0 0 35px;
+}
+
+.advantages__annotation-description {
+  margin: 0;
 }
 
 .advantages__list {
