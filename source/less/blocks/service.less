@@ -1,8 +1,33 @@
 .service {
-  .list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 23px 18px 46px;
+  gap: 25px;
+  background-color: @color-second;
+
+  @media (min-width:@tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 .service__item {
   color: @color-base;
-  background-color: @color-second;
+  display: grid;
+  grid-template-columns: 47px auto;
+  row-gap: 16px;
+  justify-items: start;
+}
+
+.service__subtitle {
+  margin: 0;
+  grid-column: 2/3;
+}
+
+.service__description {
+  margin: 0;
+  grid-column: 2/3;
+  text-align: start;
 }
