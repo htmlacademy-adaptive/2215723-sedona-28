@@ -6,16 +6,17 @@
   flex-shrink: 0;
 
   @media (min-width:@tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 113px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 36px 60px;
   }
 
   @media (min-width:@desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 36px 120px;
-    gap: 270px;
   }
 }
 
@@ -31,7 +32,6 @@
     margin: 0;
   }
 }
-
 
 .footer__social {
   margin-bottom: 30px;

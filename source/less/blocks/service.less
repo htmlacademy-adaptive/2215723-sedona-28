@@ -9,6 +9,8 @@
   @media (min-width:@tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    gap: 6px;
   }
 
 }
@@ -19,15 +21,44 @@
   grid-template-columns: 47px auto;
   row-gap: 16px;
   justify-items: start;
+  box-sizing: border-box;
+
+  @media (min-width:@tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 33px;
+
+  }
 }
 
 .service__subtitle {
   margin: 0;
   grid-column: 2/3;
+  text-align: start;
+
+  @media (min-width:@tablet-width) {
+    text-align: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 77px;
+      height: 72px;
+      margin: 0 55px 26px;
+    }
+
+  }
 }
 
 .service__description {
   margin: 0;
   grid-column: 2/3;
   text-align: start;
+  padding: 0 10px;
+  box-sizing: border-box;
+
+  @media (min-width:@tablet-width) {
+    margin: 14px 0 0;
+    text-align: center;
+  }
 }
