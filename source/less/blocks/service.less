@@ -6,13 +6,12 @@
   gap: 25px;
   background-color: @color-second;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0;
     gap: 6px;
   }
-
 }
 
 .service__item {
@@ -23,13 +22,13 @@
   justify-items: start;
   box-sizing: border-box;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     padding: 60px 33px;
   }
 
-  @media (min-width:@desktop-width) {
+  @media (min-width: @desktop-width) {
     padding: 69px 50px;
   }
 }
@@ -39,7 +38,7 @@
   grid-column: 2/3;
   text-align: start;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     text-align: center;
 
     &::before {
@@ -59,7 +58,7 @@
   padding: 0 10px;
   box-sizing: border-box;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     margin: 14px 0 0;
     text-align: center;
   }
