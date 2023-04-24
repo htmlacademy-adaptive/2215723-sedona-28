@@ -16,6 +16,7 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     border: none;
+    background: @color-bg-input;
   }
 
   &--first-place {
@@ -41,6 +42,7 @@
   &--third-place {
     @media (min-width: @tablet-width) {
       grid-column: 2/3;
+      background-color: @color-bg-third-image;
     }
 
     @media (min-width: @desktop-width) {
@@ -66,12 +68,40 @@
   min-height: 385px;
 
   @media (min-width: @tablet-width) {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 6fr 1fr 1fr;
+    width: 324px;
+    min-height: 347px;
   }
 
-  @media (min-width: @desktop-width) {
-    grid-column: 3/4;
+  &--first-place {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 8fr 1fr 1fr;
+      width: 648px;
+    }
+  }
+}
+
+.photo__image {
+  object-fit: cover;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 267px;
+    grid-column: 1/3;
+    grid-row: 1/7;
+  }
+
+  &--first-place {
+    @media(min-width: @tablet-width) {
+      width: 100%;
+      min-height: 400px;
+      grid-column: 1/3;
+      grid-row: 1/9;
+    }
   }
 }
 
@@ -80,10 +110,57 @@
   font-weight: 700;
   text-transform: uppercase;
   color: @color-title;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    margin: 22px 0 0 20px;
+  }
+
+  &--first-place {
+    @media(min-width: @tablet-width) {
+      grid-column: 1/2;
+      grid-row: 9/10;
+      margin: 22px 0 0 20px;
+    }
+  }
 }
 
 .photo__author {
   margin: 2px auto 16px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 16px 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+
+  &--first-place {
+    @media(min-width: @tablet-width) {
+      grid-column: 1/2;
+      grid-row: 10/11;
+    }
+  }
+}
+
+.photo__favorite-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 7/9;
+  margin: 28px 20px 27px 0;
+
+  &--first-place {
+    @media (min-width: @tablet-width) {
+      grid-column: 2/3;
+      grid-row: 9/11;
+    }
+  }
 }
 
 .photo__favorite-value {
