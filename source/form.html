@@ -48,9 +48,9 @@
           посещенных вами достопримечательностях</p>
       </header>
       <form class="form__feedback feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend subtitle">Представьтесь:</legend>
-          <div class="feedback-form__wrapper">
+        <div class="feedback-form__wrapper">
+          <fieldset class="feedback-form__fieldset">
+            <legend class="feedback-form__legend subtitle">Представьтесь:</legend>
             <label class="feedback-form__label label" for="first-name">
               <span class="label__span">Имя*:</span>
               <input class="label__input" type="text" id="first-name" name="first-name" value="Пётр" placeholder="Имя"
@@ -66,11 +66,13 @@
               <input class="label__input" type="text" id="middle-name" name="middle-name" value="Викторович"
                 placeholder="Отчество">
             </label>
-          </div>
+        </div>
         </fieldset>
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend subtitle">Контактная информация:</legend>
-          <div class="feedback-form__wrapper">
+        <div class="feedback-form__wrapper feedback-form__wrapper--contacts">
+          <fieldset class="feedback-form__fieldset">
+            <legend class="feedback-form__legend feedback-form__legend--contacts subtitle">Контактная информация:
+            </legend>
+
             <label class="feedback-form__label label" for="phone">
               <span class="label__span">Контактный телефон*:</span>
               <input class="label__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
@@ -79,75 +81,85 @@
               <span class="label__span">Электронная почта*:</span>
               <input class="label__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </label>
-          </div>
-        </fieldset>
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend subtitle">Ваше общее впечатление:</legend>
-          <ul class="feedback-form__impression impression">
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="visually-hidden control-input" type="radio" name="impression" value="good-impession"
-                  checked>
-                <span class="control-mark"></span>
-                <span class="control-label">Скорее положительное</span>
-              </label>
-            </li>
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="visually-hidden control-input" type="radio" name="impression" value="bad-impession">
-                <span class="control-mark"></span>
-                <span class="control-label">Скорее отрицательное</span>
-              </label>
-            </li>
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="visually-hidden control-input" type="radio" name="impression" value="no-impession">
-                <span class="control-mark"></span>
-                <span class="control-label">Затрудняюсь ответить</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend subtitle">Посещенные достопримечательности:</legend>
-          <ul class="feedback-form__attractions attractions">
-            <li class="attractions__item">
-              <label class="attractions__control">
-                <input class="visually-hidden control-input" type="checkbox" name="Devil-Bridge" checked>
-                <span class="control-mark"></span>
-                <span class="control-label">Мост Дьявола</span>
-              </label>
-            </li>
-            <li class="attractions__item">
-              <label class="attractions__control">
-                <input class="visually-hidden control-input" type="checkbox" name="Bell-Mountain" checked>
-                <span class="control-mark"></span>
-                <span class="control-label">Гора-Колокол</span>
-              </label>
-            </li>
-            <li class="attractions__item">
-              <label class="attractions__control">
-                <input class="visually-hidden control-input" type="checkbox" name="Slide-Park" checked>
-                <span class="control-mark"></span>
-                <span class="control-label">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="attractions__item">
-              <label class="attractions__control">
-                <input class="visually-hidden control-input" type="checkbox" name="Red Rocks">
-                <span class="control-mark"></span>
-                <span class="control-label">Красные скалы</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend subtitle">Опишите свои эмоции:</legend>
-          <div class="feedback-form__wrapper">
-            <textarea class="feedback-form__textarea" rows="5" cols="20">Опишите подробно все свои восторги
+          </fieldset>
+        </div>
+
+        <div class="feedback-form__wrapper">
+          <fieldset class="feedback-form__fieldset">
+            <legend class="feedback-form__legend subtitle">Ваше общее впечатление:</legend>
+            <ul class="feedback-form__impression impression">
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="visually-hidden control-input" type="radio" name="impression" value="good-impession"
+                    checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="visually-hidden control-input" type="radio" name="impression" value="bad-impession">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="visually-hidden control-input" type="radio" name="impression" value="no-impession">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+        </div>
+
+        <div class="feedback-form__wrapper">
+          <fieldset class="feedback-form__fieldset">
+            <legend class="feedback-form__legend subtitle">Посещенные достопримечательности:</legend>
+            <ul class="feedback-form__attractions attractions">
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="visually-hidden control-input" type="checkbox" name="Devil-Bridge" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="visually-hidden control-input" type="checkbox" name="Bell-Mountain" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="visually-hidden control-input" type="checkbox" name="Slide-Park" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="attractions__item">
+                <label class="attractions__control">
+                  <input class="visually-hidden control-input" type="checkbox" name="Red Rocks">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="feedback-form__wrapper">
+          <fieldset class="feedback-form__fieldset">
+            <legend class="feedback-form__legend subtitle">Опишите свои эмоции:</legend>
+
+            <textarea class="feedback-form__textarea" rows="5" cols="20"
+              placeholder="Опишите подробно все свои восторги">
               </textarea>
-          </div>
-        </fieldset>
+
+          </fieldset>
+        </div>
         <button class="form__button button" type="submit">Отправить отзыв</button>
         <span class="form__span">*-обязательные поля</span>
       </form>
