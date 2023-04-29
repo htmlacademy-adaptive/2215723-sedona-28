@@ -48,43 +48,44 @@
           посещенных вами достопримечательностях</p>
       </header>
       <form class="form__feedback feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="feedback-form__wrapper">
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__legend subtitle">Представьтесь:</legend>
-            <label class="feedback-form__label label" for="first-name">
-              <span class="label__span">Имя*:</span>
-              <input class="label__input" type="text" id="first-name" name="first-name" value="Пётр" placeholder="Имя"
-                required>
-            </label>
-            <label class="feedback-form__label label" for="last-name">
-              <span class="label__span">Фамилия*:</span>
-              <input class="label__input" type="text" id="last-name" name="last-name" value="Пустота"
-                placeholder="Фамилия" required>
-            </label>
-            <label class="feedback-form__label label" for="middle-name">
-              <span class="label__span">Отчество:</span>
-              <input class="label__input" type="text" id="middle-name" name="middle-name" value="Викторович"
-                placeholder="Отчество">
-            </label>
-        </div>
-        </fieldset>
-        <div class="feedback-form__wrapper feedback-form__wrapper--contacts">
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__legend feedback-form__legend--contacts subtitle">Контактная информация:
-            </legend>
-
-            <label class="feedback-form__label label" for="phone">
-              <span class="label__span">Контактный телефон*:</span>
-              <input class="label__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
-            </label>
-            <label class="feedback-form__label label-contacts" for="email">
-              <span class="label__span">Электронная почта*:</span>
-              <input class="label__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
-            </label>
+        <div class="feedback-form__tourist">
+          <div class="feedback-form__wrapper">
+            <fieldset class="feedback-form__fieldset">
+              <legend class="feedback-form__legend subtitle">Представьтесь:</legend>
+              <label class="feedback-form__label label" for="first-name">
+                <span class="label__span">Имя*:</span>
+                <input class="label__input" type="text" id="first-name" name="first-name" value="Пётр" placeholder="Имя"
+                  required>
+              </label>
+              <label class="feedback-form__label label" for="last-name">
+                <span class="label__span">Фамилия*:</span>
+                <input class="label__input" type="text" id="last-name" name="last-name" value="Пустота"
+                  placeholder="Фамилия" required>
+              </label>
+              <label class="feedback-form__label label" for="middle-name">
+                <span class="label__span">Отчество:</span>
+                <input class="label__input" type="text" id="middle-name" name="middle-name" value="Викторович"
+                  placeholder="Отчество">
+              </label>
+          </div>
           </fieldset>
-        </div>
+          <div class="feedback-form__wrapper feedback-form__wrapper--contacts">
+            <fieldset class="feedback-form__fieldset">
+              <legend class="feedback-form__legend feedback-form__legend--contacts subtitle">Контактная информация:
+              </legend>
 
-        <div class="feedback-form__wrapper">
+              <label class="feedback-form__label label" for="phone">
+                <span class="label__span">Контактный телефон*:</span>
+                <input class="label__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+              </label>
+              <label class="feedback-form__label label-contacts" for="email">
+                <span class="label__span">Электронная почта*:</span>
+                <input class="label__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="feedback-form__wrapper feedback-form__wrapper--sideline">
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__legend subtitle">Ваше общее впечатление:</legend>
             <ul class="feedback-form__impression impression">
@@ -114,8 +115,7 @@
           </fieldset>
 
         </div>
-
-        <div class="feedback-form__wrapper">
+        <div class="feedback-form__wrapper feedback-form__wrapper--sideline">
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__legend subtitle">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__attractions attractions">
@@ -150,12 +150,12 @@
             </ul>
           </fieldset>
         </div>
-        <div class="feedback-form__wrapper">
+
+        <div class="feedback-form__wrapper feedback-form__wrapper--sideline">
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__legend subtitle">Опишите свои эмоции:</legend>
 
-            <textarea class="feedback-form__textarea" rows="5" cols="20"
-              placeholder="Опишите подробно все свои восторги">
+            <textarea class="feedback-form__textarea" rows="5" cols="20">Опишите подробно все свои восторги
               </textarea>
 
           </fieldset>
