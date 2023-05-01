@@ -115,7 +115,8 @@
           </fieldset>
 
         </div>
-        <div class="feedback-form__wrapper feedback-form__wrapper--sideline">
+        <div
+          class="feedback-form__wrapper feedback-form__wrapper--sideline feedback-form__wrapper--sideline-attractions">
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__legend subtitle">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__attractions attractions">
@@ -152,7 +153,7 @@
         </div>
 
         <div class="feedback-form__wrapper feedback-form__wrapper--sideline">
-          <fieldset class="feedback-form__fieldset">
+          <fieldset class="feedback-form__fieldset feedback-form__fieldset--textarea">
             <legend class="feedback-form__legend subtitle">Опишите свои эмоции:</legend>
 
             <textarea class="feedback-form__textarea" rows="5" cols="20">Опишите подробно все свои восторги
@@ -160,8 +161,12 @@
 
           </fieldset>
         </div>
-        <button class="form__button button" type="submit">Отправить отзыв</button>
-        <span class="form__span">*-обязательные поля</span>
+        <div class="feedback-form__wrapper feedback-form__wrapper--button">
+          <button class="form__button button" type="submit">Отправить отзыв</button>
+          <span class="form__span">*-обязательные поля</span>
+        </div>
+
+
       </form>
     </section>
   </main>
