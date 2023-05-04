@@ -1,4 +1,22 @@
 .social__list {
   .list-reset;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 6px;
+
+  .social__link {
+    display: block;
+    height: 48px;
+    color: @color-second;
+    background-color: @color-bg;
+
+    &:hover {
+      background-color: @color-bg-hover;
+    }
+
+    &:active {
+      background-color: @color-bg-active;
+      color: rgb(255, 255, 255, 0.3);
+    }
+  }
 }

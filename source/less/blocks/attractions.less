@@ -1,6 +1,23 @@
 .attractions__item {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: @color-title;
+
+  @media (min-width: @tablet-width) {
+    min-width: 224px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 153px;
+  }
+}
+
+.attractions__control {
+  position: relative;
+  display: block;
+  padding-left: 58px;
 }

@@ -1,11 +1,50 @@
 .search {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding: 72px 371px 66px;
+  }
+}
+
+.search__wrapper {
+  margin: 40px auto 49px;
+
+  @media (min-width: @tablet-width) {
+    margin: 60px auto 55px;
+  }
 }
 
 .search__title {
+  margin: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: @color-title;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.search__description {
+  margin: 20px auto 0;
+  max-width: 262px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 435px;
+    margin: 33px auto 0;
+  }
+}
+
+.search__button {
+  margin: 34px auto 0;
+  padding: 17px 49px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 44px;
+    padding: 14px 121px 17px;
+  }
 }
