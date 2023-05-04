@@ -57,7 +57,23 @@
   box-shadow: 0 9px 0 0 fade(@color-bg, 30%), 0 18px 0 0 fade(@color-bg, 30%);
 }
 
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+}
+
 .main-nav--opened {
+  background-color: @color-bg;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  min-height: 223px;
+  width: 100%;
   background-color: @color-bg;
 }
 
