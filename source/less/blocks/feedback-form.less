@@ -27,27 +27,33 @@
     margin-bottom: 48px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 57px;
+  }
+
   &--sideline {
     @media (min-width: @tablet-width) {
-      &::before {
-        content: "";
-        position: absolute;
-        width: 123px;
-        height: 2px;
-        position: absolute;
-        background: @color-line-tourist;
-        top: 12px;
-      }
 
+      &::before,
       &::after {
         content: "";
         position: absolute;
         width: 123px;
         height: 2px;
-        position: absolute;
         background: @color-line-tourist;
         top: 12px;
+      }
+
+      &::after {
         right: 0;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+
+      &::before,
+      &::after {
+        width: 280px;
       }
     }
   }
@@ -64,6 +70,10 @@
         top: 25px;
       }
     }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 54px;
+    }
   }
 
   &--button {
@@ -74,6 +84,16 @@
       display: flex;
       align-items: center;
       margin-bottom: 64px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 96px;
+    }
+  }
+
+  &--emotions {
+    @media (min-width: @desktop-width) {
+      margin-bottom: 48px;
     }
   }
 }
@@ -96,6 +116,11 @@
 
   @media (min-width: @tablet-width) {
     min-width: 295px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 430px;
+    max-width: 100%;
   }
 
   &--textarea {
@@ -144,6 +169,11 @@
     margin: 0;
     min-height: 160px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 80%;
+    margin: 0 96px;
+  }
 }
 
 .feedback-form__impression {
@@ -156,6 +186,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 576px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 17px 53px;
+    gap: 28px;
   }
 }
 
@@ -171,5 +206,10 @@
     max-width: 480px;
     margin: 0 auto;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    padding: 31px 44px;
   }
 }
