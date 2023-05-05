@@ -1,5 +1,6 @@
 .main-nav__list {
   .list-reset;
+
 }
 
 .main-nav {
@@ -67,16 +68,6 @@
   background-color: @color-bg;
 }
 
-.main-nav--opened .main-nav__wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
-  min-height: 223px;
-  width: 100%;
-  background-color: @color-bg;
-}
-
 .main-nav--opened .main-nav__logo {
   z-index: -1;
 
@@ -123,8 +114,15 @@
   }
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    visibility: visible;
+    position: static;
+  }
 }
 
 .main-nav--nojs .site__item {
@@ -134,8 +132,4 @@
 .main-nav--nojs .main-nav__wrapper {
   position: static;
   min-height: 0;
-}
-
-.main-nav--nojs .site-list__item {
-  display: block;
 }

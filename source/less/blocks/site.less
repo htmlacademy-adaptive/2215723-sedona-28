@@ -22,9 +22,26 @@
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 
+  @media (min-width: @mobile-width) {
+    &:hover {
+      background-color: @color-bg-hover;
+    }
+
+    &:active {
+      background-color: @color-bg-active;
+    }
+
+    &:disabled {
+      color: @color-bg-disabled;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     border: none;
+
+    &:hover {
+      background-color: @color-second;
+    }
 
     &:nth-of-type(1) {
       grid-column: 1/2;
@@ -56,6 +73,12 @@
   color: @color-second;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: @mobile-width) {
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
