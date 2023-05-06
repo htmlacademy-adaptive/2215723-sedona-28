@@ -6,4 +6,31 @@
   text-decoration: none;
   text-transform: uppercase;
   color: @color-title;
+
+  &:hover {
+    color: @color-bg;
+  }
+
+  &:active {
+    color: @color-title-active;
+  }
+
+  &:disabled {
+    color: @color-bg-disabled;
+  }
+
+  svg {
+    &:hover {
+      color: @color-bg;
+    }
+
+    &:active {
+      color: @color-title-active;
+    }
+
+    &:disabled {
+      color: @color-bg-disabled;
+    }
+
+  }
 }
