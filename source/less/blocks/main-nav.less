@@ -81,6 +81,14 @@
 .main-nav--opened .main-nav__toggle {
   background-color: @color-bg;
 
+  &:hover {
+    background-color: @color-bg-hover;
+  }
+
+  &:active {
+    background-color: @color-bg-active;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -99,14 +107,14 @@
     transform: rotate(-45deg);
   }
 
-  &:active::before,
-  &:active::after {
-    background-color: fade(@color-second, 30%);
-  }
-
   &:hover::before,
   &:hover::after {
     background-color: fade(@color-second, 60%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@color-second, 30%);
   }
 }
 
