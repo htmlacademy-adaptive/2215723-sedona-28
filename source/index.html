@@ -63,10 +63,17 @@
               <span>— №1 —</span>
               <p class="advantages__description description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantages__image advantages__image--first-reason" width="320" height="260"
-              src="img/mobile/index/advantages-real-city-mobile.jpg" alt="Дома Седоны.">
-
-
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/index/advantages-city-desktop@1x.jpg 1x, img/index/advantages-city-desktop@2x.jpg 2x"
+                width="800" height="256">
+              <source media="(min-width: 768px)"
+                srcset="img/index/advantages-city-tablet@1x.jpg 1x, img/index/advantages-city-tablet@2x.jpg 2x"
+                width="512" height="256">
+              <img class="advantages__image advantages__image--first-reason"
+                src="img/index/advantages-city@1x.jpg 1x, img/index/advantages-city@2x.jpg 2x" width="320" height="260"
+                alt="Дома Седоны.">
+            </picture>
             <ul class="advantages__service service">
               <li class="service__item">
                 <h4 class="service__subtitle subtitle">Жильё</h4>
