@@ -149,6 +149,27 @@
 .feedback-form__label {
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &--tel::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 57px;
+    right: 0;
+    background: url("../../img/mobile/form/phone-icon.svg");
+    top: 26px;
+  }
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 57px;
+    right: 0;
+    background: url("../../img/mobile/form/mail-icon.svg");
+    top: 26px;
+  }
 }
 
 .feedback-form__textarea {
@@ -165,6 +186,15 @@
   resize: none;
   border: none;
   box-sizing: border-box;
+
+  &::placeholder {
+    font-family: @font-family-base;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: @color-title;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0;

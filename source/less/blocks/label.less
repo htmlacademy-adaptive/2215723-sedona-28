@@ -4,8 +4,9 @@
 }
 
 .label__input {
-  margin-bottom: 20px;
-  padding: 18px 70px 14px 18px;
+  position: relative;
+  margin-bottom: 16px;
+  padding: 18px 70px 18px 18px;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -16,5 +17,19 @@
 
   &::placeholder {
     opacity: 0.3;
+    font-family: @font-family-base;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
   }
+}
+
+.label__input[type="tel"]::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  right: 0;
+  background: url("../../img/mobile/form/phone-icon.svg");
 }
