@@ -17,7 +17,7 @@
     <!--Состояние class="main-nav--opened main-nav--nojs" - js отключен, меню в абсолюте, кнопка не отображается, main-nav--opened/main-nav--closed - меню открыто -->
     <nav class="main-nav main-nav--closed">
       <a class="main-nav__logo" href="index.html">
-        <img class="main-nav__logo-icon" src="img/mobile/header/logo-sedona-mobile.svg" width="185" height="96"
+        <img class="main-nav__logo-icon" src="img/header/logo-sedona-mobile.svg" width="185" height="96"
           alt="Логотип города Седона.">
       </a>
       <button class="main-nav__toggle" type="button">
@@ -63,16 +63,15 @@
               <span>— №1 —</span>
               <p class="advantages__description description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <picture>
+            <picture class="advantages__image advantages__image--first-reason">
               <source media="(min-width: 1200px)"
                 srcset="img/index/advantages-city-desktop@1x.jpg 1x, img/index/advantages-city-desktop@2x.jpg 2x"
                 width="800" height="256">
               <source media="(min-width: 768px)"
                 srcset="img/index/advantages-city-tablet@1x.jpg 1x, img/index/advantages-city-tablet@2x.jpg 2x"
                 width="512" height="256">
-              <img class="advantages__image advantages__image--first-reason"
-                src="img/index/advantages-city@1x.jpg 1x, img/index/advantages-city@2x.jpg 2x" width="320" height="260"
-                alt="Дома Седоны.">
+              <img class="advantages__image advantages__image--first-reason" src="img/index/advantages-city@1x.jpg"
+                srcset="img/index/advantages-city@2x.jpg 2x" width="320" height="260" alt="Дома Седоны.">
             </picture>
             <ul class="advantages__service service">
               <li class="service__item">
@@ -95,8 +94,16 @@
 
           </li>
           <li class="advantages__item advantages__item--blue-background advantages__item--bridge">
-            <img class="advantages__image advantages__image--second-reason" width="320" height="260"
-              src="img/mobile/index/advantages-bridge-mobile.jpg" alt="Скалы Седоны.">
+            <picture class="advantages__image advantages__image--second-reason">
+              <source media="(min-width: 1200px)"
+                srcset="img/index/advantages-bridge-desktop@1x.jpg 1x, img/index/advantages-bridge-desktop@2x.jpg 2x"
+                width="800" height="256">
+              <source media="(min-width: 768px)"
+                srcset="img/index/advantages-bridge-tablet@1x.jpg 1x, img/index/advantages-bridge-tablet@2x.jpg 2x"
+                width="512" height="256">
+              <img class="advantages__image advantages__image--second-reason" src="img/index/advantages-bridge@1x.jpg"
+                srcset="img/index/advantages-bridge@2x.jpg 2x" width="320" height="260" alt="Скалы Седоны.">
+            </picture>
             <div class="advantages__item-big-text advantages__item-big-text--second-reason">
               <h3 class="advantages__subtitle subtitle">Там есть мост дьявола</h3>
               <span>— №2 —</span>
@@ -133,13 +140,17 @@
           предложения гостиниц в Седоне</p>
         <button class="search__button button" type="button">Найти гостиницу</button>
       </div>
-
-
+      <picture class="search__map">
+        <source media="(min-width: 1200px)" srcset="img/index/map-desktop@1x.jpg 1x, img/index/map-desktop@2x.jpg 2x"
+          width="1200" height="350">
+        <source media="(min-width: 768px)" srcset="img/index/map-tablet@1x.jpg 1x, img/index/map-tablet@2x.jpg 2x"
+          width="768" height="350">
+        <img class="search__map" src="img/index/map@1x.jpg" srcset="img/index/map@2x.jpg 2x" width="320" height="350"
+          alt="Карта Седоны.">
+      </picture>
     </section>
-    <iframe src="img/mobile/index/map-mobile.jpg" height="350" width="320"></iframe>
   </main>
   <footer class="footer">
-
     <h2 class="visually-hidden">Дополнительная информация</h2>
     <p class="footer__hashtag">#VisitSedona</p>
     <div class="footer__social social">
