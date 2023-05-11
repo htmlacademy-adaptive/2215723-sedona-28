@@ -50,6 +50,18 @@
   display: flex;
   flex-direction: column;
 
+  &::before {
+    content: "";
+    display: block;
+    height: 37px;
+    width: auto;
+    background: url("../img/white-triangle.svg") no-repeat #86b3d2;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     grid-column: 1/4;
     grid-row: 1/2;
