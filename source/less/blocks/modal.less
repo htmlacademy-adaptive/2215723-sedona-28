@@ -1,0 +1,156 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal__form {
+  position: fixed;
+  background: @color-second;
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+
+  &--success {
+    top: 402px;
+
+    @media (min-width: @tablet-width) {
+      top: 162px;
+      width: 83%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 145px;
+      width: 53%;
+    }
+  }
+
+  &--failure {
+    top: 116px;
+
+    @media (min-width: @tablet-width) {
+      top: 283px;
+      width: 52%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 244px;
+      width: 33%;
+    }
+  }
+}
+
+.modal__top {
+  margin: 36px auto 55px;
+  width: 76%;
+
+  @media (min-width: @tablet-width) {
+    width: 69%;
+    margin: 50px auto 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.modal__top--failure {
+  width: 76%;
+  margin: 45px auto 37px;
+
+  @media (min-width: @tablet-width) {
+    width: 75%;
+    margin: 34px auto 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 44px auto 48px;
+  }
+}
+
+.modal__subtitle {
+  margin: 0 0 25px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 0 0 30px;
+
+    &--failure {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 34px;
+
+    &--failure {
+      margin-bottom: 27px;
+    }
+  }
+
+}
+
+.modal__description {
+  margin: 0;
+
+  &--failure {
+    margin-bottom: 27px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 56px;
+    }
+
+    @media(min-width: @desktop-width) {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.modal__bottom {
+  width: 100%;
+  background: @color-bg-input;
+  box-sizing: border-box;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 89px;
+  }
+}
+
+.modal__button {
+  font-size: 18px;
+  width: 100%;
+  padding: 16px 22px 14px 20px;
+
+  &--success {
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
+  }
+
+  &--failure {
+    width: 76%;
+    margin: 0 auto;
+    padding: 18px 20px 14px 18px;
+
+    @media (min-width: @tablet-width) {
+      width: 90%;
+    }
+  }
+}

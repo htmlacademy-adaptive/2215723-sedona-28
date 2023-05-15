@@ -28,7 +28,7 @@
 }
 
 .advantages__annotation-subtitle {
-  margin: 0 0 38px;
+  margin: 0 0 30px;
 }
 
 .advantages__annotation-description {
@@ -46,8 +46,12 @@
   }
 }
 
-.advantages__item--first-reason {
+.advantages__item {
   display: flex;
+}
+
+.advantages__item--first-reason {
+
   flex-direction: column;
 
   &::before {
@@ -55,7 +59,8 @@
     display: block;
     height: 37px;
     width: auto;
-    background: url("../img/white-triangle.svg") center no-repeat #86b3d2;
+    background: url("../img/white-triangle.svg") no-repeat #86b3d2;
+    background-position-x: center;
 
     @media (min-width: @tablet-width) {
       display: none;
@@ -69,6 +74,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
 .advantages__item-big-text {
   max-width: 284px;
@@ -144,7 +150,7 @@
 
 .advantages__description {
   margin: 17px auto 0;
-  max-width: 250px;
+  max-width: 280px;
 
   @media (min-width: @tablet-width) {
     margin: 22px auto 0;
@@ -191,28 +197,40 @@
   background-color: @color-second;
 }
 
-.advantages__wrapper-grey {
+.advantages__item--grey-background {
   background-color: @color-bg-grey;
   padding: 0 18px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    grid-column: 1/4;
-    grid-row: 3/4;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     border: none;
   }
 }
 
-.advantages__item--grey-background {
-  border-top: 1px solid @color-advantages-line;
-  padding: 24px 20px;
+.advantages__wrapper-grey {
+  border-bottom: 1px solid @color-advantages-line;
+  padding: 24px 15px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    border: none;
     display: flex;
     flex-direction: column;
-    padding: 41px 33px;
+    padding: 0;
+    margin: 0 auto;
+    min-width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 300px;
+  }
+}
+
+.advantages__item--square {
+  @media (min-width: @tablet-width) {
+    padding: 41px 33px 61px;
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 
   @media (min-width: @desktop-width) {
@@ -220,35 +238,30 @@
   }
 }
 
-.advantages__item--square {
-  @media (min-width: @tablet-width) {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    border: none;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .advantages__item--road {
-  display: flex;
-  flex-direction: column;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
+    padding: 41px 33px;
     grid-column: 2/3;
-    grid-row: 1/2;
-    border: none;
-    display: flex;
-    flex-direction: column;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 50px;
   }
 }
 
 .advantages__item--tourist {
+  padding: 0;
+
   @media (min-width: @tablet-width) {
+    padding: 41px 33px 61px;
     grid-column: 3/4;
-    grid-row: 1/2;
-    border: none;
-    display: flex;
-    flex-direction: column;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 50px;
   }
 }

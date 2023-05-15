@@ -85,7 +85,7 @@
                 <span class="label__span">Контактный телефон<sup>*</sup>:</span>
                 <input class="label__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
               </label>
-              <label class="feedback-form__label feedback-form__label--email label-contacts" for="email">
+              <label class="feedback-form__label feedback-form__label--email label label-contacts" for="email">
                 <span class="label__span">Электронная почта<sup>*</sup>:</span>
                 <input class="label__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
               </label>
@@ -237,6 +237,27 @@
     </div>
 
   </footer>
-
-
+  <div class="modal modal--closed">
+    <div class="modal__form modal__form--success">
+      <div class="modal__top">
+        <h2 class="modal__subtitle subtitle">Ваш отзыв отправлен!</h2>
+        <p class="modal__description description">Спасибо за ваше участие, ваш отзыв уже
+          поступил к нам.
+          В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__bottom ">
+        <button class="button modal__button modal__button--success">Закрыть окно</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal--closed">
+    <div class="modal__form modal__form--failure">
+      <div class="modal__top modal__top--failure">
+        <h2 class="modal__subtitle modal__subtitle--failure subtitle">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__description  modal__description--failure description">Проверьте поля, выделенные красным,
+          скорее всего вы забыли&nbsp;их заполнить</p>
+        <button class="button modal__button modal__button--failure">ок</button>
+      </div>
+    </div>
+  </div>
 </body>
