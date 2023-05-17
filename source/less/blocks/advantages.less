@@ -28,7 +28,7 @@
 }
 
 .advantages__annotation-subtitle {
-  margin: 0 0 30px;
+  margin: 0 0 35px;
 }
 
 .advantages__annotation-description {
@@ -51,7 +51,6 @@
 }
 
 .advantages__item--first-reason {
-
   flex-direction: column;
 
   &::before {
@@ -74,7 +73,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 
 .advantages__item-big-text {
   max-width: 284px;
@@ -135,7 +133,7 @@
 
 .advantages__subtitle {
   color: @color-second;
-  margin: 0 auto 11px;
+  margin: 0 auto 14px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 13px;
@@ -144,7 +142,7 @@
 }
 
 .advantages__subtitle--grey-background {
-  /*margin-top: 30px;*/
+  margin: 0 auto 10px;
   color: @color-title;
 }
 
@@ -204,21 +202,26 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     border: none;
+    min-height: 256px;
+    box-sizing: border-box;
+    padding: 41px 33px 61px;
   }
 }
 
 .advantages__wrapper-grey {
+  min-width: 284px;
   border-bottom: 1px solid @color-advantages-line;
   padding: 24px 15px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    border: none;
     display: flex;
     flex-direction: column;
-    padding: 0;
     margin: 0 auto;
     min-width: 174px;
+    padding: 0;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -228,7 +231,6 @@
 
 .advantages__item--square {
   @media (min-width: @tablet-width) {
-    padding: 41px 33px 61px;
     grid-column: 1/2;
     grid-row: 3/4;
   }
@@ -242,7 +244,7 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 41px 33px;
+    padding: 41px 33px 41px;
     grid-column: 2/3;
     grid-row: 3/4;
   }
@@ -256,7 +258,7 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 41px 33px 61px;
+    padding: 41px 33px 41px;
     grid-column: 3/4;
     grid-row: 3/4;
   }
