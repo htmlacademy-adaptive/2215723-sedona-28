@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма отзыва</title>
+  <meta name="description" content="Поделитесь впечатлениями от поездки в Седону.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -15,7 +16,7 @@
 <body class="page__body">
   <header class="main-header">
     <!--модификатор main-nav--opened для открытого состояния, модификатор main-nav--nojs - js отключен -->
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo" href="index.html">
         <img class="main-nav__logo-icon" src="img/header/logo-sedona-mobile.svg" width="185" height="96"
           alt="Логотип города Седона.">
@@ -67,12 +68,12 @@
               </label>
               <label class="feedback-form__label label" for="last-name">
                 <span class="label__span">Фамилия<sup>*</sup>:</span>
-                <input class="label__input" type="text" id="last-name" name="last-name" value="Пустота"
-                  placeholder="Фамилия" required>
+                <input class="label__input label__input--surname" type="text" id="last-name" name="last-name"
+                  value="Пустота" placeholder="Фамилия" required>
               </label>
               <label class="feedback-form__label label" for="middle-name">
                 <span class="label__span">Отчество:</span>
-                <input class="label__input" type="text" id="middle-name" name="middle-name" value="Викторович"
+                <input class="label__input " type="text" id="middle-name" name="middle-name" value="Викторович"
                   placeholder="Отчество">
               </label>
             </fieldset>
@@ -84,7 +85,7 @@
 
               <label class="feedback-form__label feedback-form__label--tel label" for="phone">
                 <span class="label__span">Контактный телефон<sup>*</sup>:</span>
-                <input class="label__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                <input class="label__input " type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
               </label>
               <label class="feedback-form__label feedback-form__label--email label label-contacts" for="email">
                 <span class="label__span">Электронная почта<sup>*</sup>:</span>
@@ -95,7 +96,8 @@
         </div>
         <div class="feedback-form__wrapper feedback-form__wrapper--sideline">
           <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__legend subtitle">Ваше общее впечатление:</legend>
+            <legend class="feedback-form__legend feedback-form__legend--impression subtitle">Ваше общее впечатление:
+            </legend>
             <ul class="feedback-form__impression impression">
               <li class="impression__item">
                 <label class="impression__control">
@@ -125,7 +127,8 @@
         <div
           class="feedback-form__wrapper feedback-form__wrapper--sideline feedback-form__wrapper--sideline-attractions">
           <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__legend subtitle">Посещенные достопримечательности:</legend>
+            <legend class="feedback-form__legend feedback-form__legend--impression subtitle">Посещенные
+              достопримечательности:</legend>
             <ul class="feedback-form__attractions attractions">
               <li class="attractions__item">
                 <label class="attractions__control">
@@ -160,7 +163,8 @@
         </div>
         <div class="feedback-form__wrapper feedback-form__wrapper--sideline feedback-form__wrapper--emotions">
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--textarea">
-            <legend class="feedback-form__legend subtitle">Опишите свои эмоции:</legend>
+            <legend class="feedback-form__legend feedback-form__legend--impression subtitle">Опишите свои эмоции:
+            </legend>
             <textarea class="feedback-form__textarea" placeholder="Опишите подробно все свои восторги" rows="5"
               cols="20"></textarea>
           </fieldset>

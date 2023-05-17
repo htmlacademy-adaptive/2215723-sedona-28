@@ -1,12 +1,12 @@
 .label__span {
   text-transform: uppercase;
-  margin: 0 0 0 18px;
+  margin: 0 0 0 16px;
 }
 
 .label__input {
   position: relative;
-  margin-bottom: 16px;
-  padding: 18px 70px 18px 18px;
+  margin-bottom: 11px;
+  padding: 19px 70px 18px 16px;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -15,6 +15,15 @@
   border: none;
   box-sizing: border-box;
   cursor: pointer;
+
+  &--surname {
+    margin-bottom: 13px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 16px;
+    }
+  }
+
 
   &::placeholder {
     opacity: 0.3;
@@ -32,6 +41,12 @@
   &:active {
     outline: 4px solid @color-bg-disabled;
     background-color: @color-second;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: @color-second;
+    outline: 4px solid @color-bg-disabled;
   }
 
   .label__input[type="tel"]::after {

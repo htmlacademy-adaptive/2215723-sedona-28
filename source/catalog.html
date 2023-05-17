@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Красивые места Седоны</title>
+  <meta name="description" content="Познакомьтесь с пейзажами Седоны.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -15,8 +16,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <!--модификатор main-nav--opened для открытого состояния, модификатор main-nav--nojs - js отключен -->
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--closed">
       <a class="main-nav__logo" href="index.html">
         <img class="main-nav__logo-icon" src="img/header/logo-sedona-mobile.svg" width="185" height="96"
           alt="Логотип города Седона.">
@@ -60,18 +60,23 @@
             политике и экономике.</p>
         </div>
         <ul class="media__list photo">
+
           <li class="photo__item photo__item--first-place">
             <div class="photo__wrapper photo__wrapper--first-place">
-              <picture class="photo__image photo__image--first-place">
-                <source media="(min-width: 1200px)"
-                  srcset="img/catalog/catalog_1-desktop@1x.jpg 1x, img/catalog/catalog_1-desktop@2x.jpg 2x" width="1200"
-                  height="400">
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/catalog_1-tablet@1x.jpg 1x, img/catalog/catalog_1-tablet@2x.jpg 2x" width="648"
-                  height="400">
-                <img class="photo__image photo__image--first-place" src="img/catalog/catalog_1@1x.jpg"
-                  srcset="img/catalog/catalog_1@2x.jpg 2x" width="280" height="280" alt="Дорога в пустыне на закате.">
-              </picture>
+              <a class="photo__link photo__link--first-place">
+                <picture class="photo__image photo__image--first-place">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/catalog_1-desktop@1x.jpg 1x, img/catalog/catalog_1-desktop@2x.jpg 2x"
+                    width="1200" height="400">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/catalog_1-tablet@1x.jpg 1x, img/catalog/catalog_1-tablet@2x.jpg 2x" width="648"
+                    height="400">
+                  <img class="photo__image photo__image--first-place" src="img/catalog/catalog_1@1x.jpg"
+                    srcset="img/catalog/catalog_1@2x.jpg 2x" width="280" height="280" alt="Дорога в пустыне на закате.">
+                </picture>
+              </a>
+
+
               <div class="photo__annotation">
                 <p class="photo__name photo__name--first-place">Неродные просторы</p>
                 <p class="photo__author photo__author--first-place">Автор фото: Борис</p>
@@ -88,18 +93,24 @@
               </div>
             </div>
           </li>
+
+
           <li class="photo__item photo__item--second-place">
             <div class="photo__wrapper photo__wrapper--second-place">
-              <picture class="photo__image">
-                <source media="(min-width: 1200px)"
-                  srcset="img/catalog/catalog_2-desktop@1x.jpg 1x, img/catalog/catalog_2-desktop@2x.jpg 2x" width="400"
-                  height="267">
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/catalog_2-tablet@1x.jpg 1x, img/catalog/catalog_2-tablet@2x.jpg 2x" width="324"
-                  height="267">
-                <img class="photo__image" src="img/catalog/catalog_2@1x.jpg" srcset="img/catalog/catalog_2@2x.jpg 2x"
-                  width="280" height="280" alt="Кактусы в Аризоне.">
-              </picture>
+              <a class="photo__link">
+                <picture class="photo__image">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/catalog_2-desktop@1x.jpg 1x, img/catalog/catalog_2-desktop@2x.jpg 2x"
+                    width="400" height="267">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/catalog_2-tablet@1x.jpg 1x, img/catalog/catalog_2-tablet@2x.jpg 2x" width="324"
+                    height="267">
+                  <img class="photo__image" src="img/catalog/catalog_2@1x.jpg" srcset="img/catalog/catalog_2@2x.jpg 2x"
+                    width="280" height="280" alt="Кактусы в Аризоне.">
+                </picture>
+              </a>
+
+
               <div class="photo__annotation">
                 <p class="photo__name">Местная растительность</p>
                 <p class="photo__author">Автор фото: Сергей</p>
@@ -116,18 +127,22 @@
               </div>
             </div>
           </li>
+
           <li class="photo__item photo__item--third-place">
             <div class="photo__wrapper photo__wrapper--third-place">
-              <picture class="photo__image">
-                <source media="(min-width: 1200px)"
-                  srcset="img/catalog/catalog_3-desktop@1x.jpg 1x, img/catalog/catalog_3-desktop@2x.jpg 2x" width="400"
-                  height="267">
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/catalog_3-tablet@1x.jpg 1x, img/catalog/catalog_3-tablet@2x.jpg 2x" width="324"
-                  height="267">
-                <img class="photo__image" src="img/catalog/catalog_3@1x.jpg" srcset="img/catalog/catalog_3@2x.jpg 2x"
-                  width="280" height="280" alt="Дороги Седоны.">
-              </picture>
+              <a class="photo__link">
+                <picture class="photo__image">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/catalog_3-desktop@1x.jpg 1x, img/catalog/catalog_3-desktop@2x.jpg 2x"
+                    width="400" height="267">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/catalog_3-tablet@1x.jpg 1x, img/catalog/catalog_3-tablet@2x.jpg 2x" width="324"
+                    height="267">
+                  <img class="photo__image" src="img/catalog/catalog_3@1x.jpg" srcset="img/catalog/catalog_3@2x.jpg 2x"
+                    width="280" height="280" alt="Дороги Седоны.">
+                </picture>
+              </a>
+
               <div class="photo__annotation">
                 <p class="photo__name">Дорога на Север</p>
                 <p class="photo__author">Автор фото: Петр</p>
@@ -146,16 +161,19 @@
           </li>
           <li class="photo__item photo__item--fourth-place">
             <div class="photo__wrapper photo__wrapper--fourth-place">
-              <picture class="photo__image">
-                <source media="(min-width: 1200px)"
-                  srcset="img/catalog/catalog_4-desktop@1x.jpg 1x, img/catalog/catalog_4-desktop@2x.jpg 2x" width="400"
-                  height="267">
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/catalog_4-tablet@1x.jpg 1x, img/catalog/catalog_4-tablet@2x.jpg 2x" width="324"
-                  height="267">
-                <img class="photo__image" src="img/catalog/catalog_4@1x.jpg" srcset="img/catalog/catalog_4@2x.jpg 2x"
-                  width="280" height="280" alt="Рыжие скалы.">
-              </picture>
+              <a class="photo__link">
+                <picture class="photo__image">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/catalog_4-desktop@1x.jpg 1x, img/catalog/catalog_4-desktop@2x.jpg 2x"
+                    width="400" height="267">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/catalog_4-tablet@1x.jpg 1x, img/catalog/catalog_4-tablet@2x.jpg 2x" width="324"
+                    height="267">
+                  <img class="photo__image" src="img/catalog/catalog_4@1x.jpg" srcset="img/catalog/catalog_4@2x.jpg 2x"
+                    width="280" height="280" alt="Рыжие скалы.">
+                </picture>
+              </a>
+
               <div class="photo__annotation">
                 <p class="photo__name">Мост Дьявола</p>
                 <p class="photo__author">Автор фото: Антон</p>
@@ -195,6 +213,7 @@
     </section>
   </main>
   <footer class="footer">
+
     <h2 class="visually-hidden">Дополнительная информация</h2>
     <p class="footer__hashtag">#VisitSedona</p>
     <div class="footer__social social">
@@ -255,6 +274,8 @@
       </a>
     </div>
   </footer>
+
 </body>
+
 
 </html>

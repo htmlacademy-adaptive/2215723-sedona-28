@@ -5,14 +5,16 @@
 }
 
 .search__wrapper {
-  margin: 40px auto 49px;
+  box-sizing: border-box;
+  margin: 20px auto 29px;
+  padding: 20px;
 
   @media (min-width: @tablet-width) {
-    margin: 60px auto 55px;
+    margin: 20px auto 35px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 60px auto 65px;
+    margin: 20px auto 35px;
   }
 }
 
@@ -42,9 +44,10 @@
 }
 
 .search__button {
+  max-width: 100%;
   min-width: 284px;
-  max-width: 89%;
-  padding: 17px 49px;
+  margin: 0 auto;
+  padding: 17px 29px;
 
   @media (min-width: @tablet-width) {
     padding: 14px 61px 17px;

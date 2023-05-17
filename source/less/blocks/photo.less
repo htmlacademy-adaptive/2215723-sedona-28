@@ -97,9 +97,10 @@
   }
 }
 
-.photo__image {
+.photo__link {
   object-fit: cover;
   width: 100%;
+  display: block;
 
   @media (min-width: @tablet-width) {
     height: 267px;
@@ -123,6 +124,22 @@
 
     @media (min-width: @desktop-width) {
       grid-row: 1/11;
+    }
+  }
+}
+
+.photo__image {
+  object-fit: cover;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 267px;
+  }
+
+
+  &--first-place {
+    @media (min-width: @tablet-width) {
+      min-height: 400px;
     }
   }
 }
