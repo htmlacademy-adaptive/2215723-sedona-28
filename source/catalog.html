@@ -75,8 +75,6 @@
                     srcset="img/catalog/catalog_1@2x.jpg 2x" width="280" height="280" alt="Дорога в пустыне на закате.">
                 </picture>
               </a>
-
-
               <div class="photo__annotation">
                 <p class="photo__name photo__name--first-place">Неродные просторы</p>
                 <p class="photo__author photo__author--first-place">Автор фото: Борис</p>
@@ -93,8 +91,6 @@
               </div>
             </div>
           </li>
-
-
           <li class="photo__item photo__item--second-place">
             <div class="photo__wrapper photo__wrapper--second-place">
               <a class="photo__link">
@@ -109,8 +105,6 @@
                     width="280" height="280" alt="Кактусы в Аризоне.">
                 </picture>
               </a>
-
-
               <div class="photo__annotation">
                 <p class="photo__name">Местная растительность</p>
                 <p class="photo__author">Автор фото: Сергей</p>
@@ -127,7 +121,6 @@
               </div>
             </div>
           </li>
-
           <li class="photo__item photo__item--third-place">
             <div class="photo__wrapper photo__wrapper--third-place">
               <a class="photo__link">
@@ -142,7 +135,6 @@
                     width="280" height="280" alt="Дороги Седоны.">
                 </picture>
               </a>
-
               <div class="photo__annotation">
                 <p class="photo__name">Дорога на Север</p>
                 <p class="photo__author">Автор фото: Петр</p>
@@ -173,7 +165,6 @@
                     width="280" height="280" alt="Рыжие скалы.">
                 </picture>
               </a>
-
               <div class="photo__annotation">
                 <p class="photo__name">Мост Дьявола</p>
                 <p class="photo__author">Автор фото: Антон</p>
@@ -198,22 +189,28 @@
         <h2 class="promote__subtitle subtitle">Все еще сомневаетесь?</h2>
         <p class="promote__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не
           подорожали в очередной раз!</p>
-        <picture class="promote__image">
-          <source media="(min-width: 1200px)"
-            srcset="img/catalog/catalog_video-desktop@1x.jpg 1x, img/catalog/catalog_video-desktop@2x.jpg 2x"
-            width="800" height="500">
-          <source media="(min-width: 768px)"
-            srcset="img/catalog/catalog_video-tablet@1x.jpg 1x, img/catalog/catalog_video-tablet@2x.jpg 2x" width="648"
-            height="500">
-          <img class="promote__image" src="img/catalog/catalog_video@1x.jpg"
-            srcset="img/catalog/catalog_video@2x.jpg 2x" width="280" height="177"
-            alt="Горная дорога с машинами в Седоне.">
-        </picture>
+        <div class="promote__image">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/catalog_video-desktop@1x.jpg 1x, img/catalog/catalog_video-desktop@2x.jpg 2x"
+              width="800" height="500">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/catalog_video-tablet@1x.jpg 1x, img/catalog/catalog_video-tablet@2x.jpg 2x"
+              width="648" height="500">
+            <img class="promote__image" src="img/catalog/catalog_video@1x.jpg"
+              srcset="img/catalog/catalog_video@2x.jpg 2x" width="280" height="177"
+              alt="Горная дорога с машинами в Седоне.">
+            <a class="promote__button" type="button">
+              <svg width="48" height="54" viewBox="0 0 48 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="currentColor" fill-opacity="0.7" />
+              </svg>
+            </a>
+          </picture>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-
     <h2 class="visually-hidden">Дополнительная информация</h2>
     <p class="footer__hashtag">#VisitSedona</p>
     <div class="footer__social social">
@@ -276,6 +273,5 @@
   </footer>
 
 </body>
-
 
 </html>

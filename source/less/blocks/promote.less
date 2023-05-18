@@ -12,10 +12,12 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    padding: 0 60px;
     margin: 57px auto 0;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0 200px;
     margin: 60px auto 0;
   }
 }
@@ -33,6 +35,11 @@
   }
 }
 
+.promote__image {
+  display: block;
+  position: relative;
+}
+
 .promote__description {
   max-width: 266px;
   margin: 0 auto 38px;
@@ -44,5 +51,23 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto 87px;
+  }
+}
+
+.promote__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: @color-second;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+    color: @color-bg-hover;
+  }
+
+  &:active {
+    color: @color-bg-active;
   }
 }
