@@ -13,6 +13,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="img/catalog/hero-catalog@1x.jpg" as="image">
 </head>
 
 <body class="page__body">
@@ -96,7 +97,8 @@
             </fieldset>
           </div>
         </div>
-        <div class="feedback-form__wrapper feedback-form__wrapper--sideline">
+        <div
+          class="feedback-form__wrapper feedback-form__wrapper--sideline feedback-form__wrapper--sideline-attractions">
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__legend feedback-form__legend--impression subtitle">Ваше общее впечатление:
             </legend>
@@ -127,7 +129,7 @@
           </fieldset>
         </div>
         <div
-          class="feedback-form__wrapper feedback-form__wrapper--sideline feedback-form__wrapper--sideline-attractions">
+          class="feedback-form__wrapper feedback-form__wrapper--sideline feedback-form__wrapper--sideline-attractions feedback-form__wrapper--border">
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__legend feedback-form__legend--impression subtitle">Посещенные
               достопримечательности:</legend>
@@ -165,7 +167,7 @@
         </div>
         <div class="feedback-form__wrapper feedback-form__wrapper--sideline feedback-form__wrapper--emotions">
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--textarea">
-            <legend class="feedback-form__legend feedback-form__legend--impression subtitle">Опишите свои эмоции:
+            <legend class="feedback-form__legend subtitle">Опишите свои эмоции:
             </legend>
             <textarea class="feedback-form__textarea" placeholder="Опишите подробно все свои восторги" rows="5"
               cols="20"></textarea>
