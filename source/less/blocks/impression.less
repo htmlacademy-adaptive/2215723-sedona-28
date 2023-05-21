@@ -1,6 +1,5 @@
 .impression__item {
   display: flex;
-  align-items: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -9,6 +8,7 @@
 
   @media (min-width: @tablet-width) {
     min-width: 280px;
+    max-width: 280px;
   }
 
   &--third {
@@ -22,4 +22,12 @@
   position: relative;
   display: block;
   padding-left: 52px;
+}
+
+.impression__control:hover .control-mark {
+  background-color: @color-bg-disabled;
+}
+
+.impression__control:active .control-mark {
+  background-color: @color-label-active;
 }

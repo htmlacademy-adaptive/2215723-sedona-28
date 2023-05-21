@@ -1,6 +1,10 @@
+.form {
+  margin-bottom: 18px;
+}
+
 .form__feedback {
   @media (min-width: @tablet-width) {
-    width: 84.38%;
+    width: 84%;
     margin: 0 auto;
   }
 
@@ -40,12 +44,9 @@
   }
 }
 
-
 .form__span {
   display: flex;
   justify-content: right;
-  width: 85%;
-  margin: 0 auto;
   font-size: 12px;
   opacity: 0.6;
   text-transform: uppercase;
@@ -57,11 +58,13 @@
 
 .form__button {
   margin: 0 auto;
-  padding: 16px 0;
-  min-width: 85%;
+  padding: 16px;
+  min-width: 100%;
 
   @media (min-width: @tablet-width) {
     min-width: 324px;
+    max-width: 50%;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {

@@ -1,6 +1,5 @@
 .attractions__item {
   display: flex;
-  align-items: center;
   min-height: 46px;
   font-weight: 700;
   font-size: 18px;
@@ -8,11 +7,12 @@
   color: @color-title;
 
   @media (min-width: @tablet-width) {
-    min-width: 224px;
+    width: 224px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 153px;
+    max-width: 184px;
   }
 }
 
@@ -20,4 +20,12 @@
   position: relative;
   display: block;
   padding-left: 58px;
+}
+
+.attractions__control:hover .control-mark {
+  background-color: @color-bg-disabled;
+}
+
+.attractions__control:active .control-mark {
+  background-color: @color-label-active;
 }

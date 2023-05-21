@@ -12,4 +12,18 @@
   text-transform: uppercase;
   border: none;
   box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @color-bg-hover;
+  }
+
+  &:active {
+    background-color: @color-bg-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @color-bg-disabled;
+  }
 }
