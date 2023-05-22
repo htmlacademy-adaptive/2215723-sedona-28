@@ -19,7 +19,7 @@
 <body class="page__body">
   <header class="main-header">
     <!--модификатор main-nav--opened для открытого состояния, модификатор main-nav--nojs - js отключен -->
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <a class="main-nav__logo" href="#">
         <img class="main-nav__logo-icon" src="img/logo-sedona-mobile.svg" width="185" height="96"
           alt="Логотип города Седона.">
@@ -168,7 +168,7 @@
       <iframe class="search__map"
         src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=false&amp;um=constructor%3A9d6a85f289544fbe86246130d1490f5326427fcd87cbcaa9b20556d505df7dc6"
         allowfullscreen loading="lazy" height="350"></iframe>
-      <noscript>
+      <noscript class="search__noscript">
         <picture class="search__map">
           <source type="image/webp" media="(min-width: 1200px)"
             srcset="img/index/map-desktop@1x.webp 1x, img/index/map-desktop@2x.webp 2x">
