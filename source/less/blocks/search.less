@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: relative;
 }
 
 .search__wrapper {
@@ -66,5 +67,15 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+}
+
+.search__noscript {
+  position: absolute;
+  width: 100%;
+  top: 292px;
+
+  @media (min-width: @tablet-width) {
+    top: 317px;
   }
 }
